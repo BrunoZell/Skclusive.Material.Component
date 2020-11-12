@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -41,7 +41,7 @@ namespace Skclusive.Material.Theme
 
         public static string IntToHex(this int value)
         {
-            var hex = value.ToString("X");
+            var hex = value.ToString("X", CultureInfo.InvariantCulture);
 
             return hex.Length == 1 ? $"0{hex}" : hex;
         }

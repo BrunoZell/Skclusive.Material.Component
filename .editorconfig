@@ -15,3 +15,5 @@ insert_final_newline = true
 
 [*.{cs,razor}]
 dotnet_diagnostic.CA1304.severity = error
+dotnet_diagnostic.CA1305.severity = error
+dotnet_diagnostic.CA1309.severity = error
